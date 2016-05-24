@@ -1,19 +1,23 @@
 def fizzbuzz(number):
     if (float(number) / 15) == round(number / 15) :
-        print("Fizzbuzz")
+        sign = "FizzBuzz"
     elif (float(number) / 3) == round(number / 3) :
-        print("Fizz ")
+        sign = "Fizz"
     elif (float(number) / 5) == round(number / 5) :
-        print("Buzz")
+        sign = "Buzz"
     else :
-        print number
-    return
+        sign = number
+    print(sign)
+    return sign
+
 
 
 def main():
     for x in range(1, 101):
         fizzbuzz(x)
     return
+
+
 
 if __name__ == '__main__':
     main()
