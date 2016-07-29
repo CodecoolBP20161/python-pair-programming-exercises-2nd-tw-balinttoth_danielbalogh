@@ -1,21 +1,27 @@
-def fizzbuzz(number):
-    if (float(number) / 15) == round(number / 15) :
-        sign = "FizzBuzz"
-    elif (float(number) / 3) == round(number / 3) :
-        sign = "Fizz"
-    elif (float(number) / 5) == round(number / 5) :
-        sign = "Buzz"
-    else :
-        sign = number
-    print(sign)
-    return sign
+def fizzbuzz():
+
+    list_1_100 = []
+
+    for i in range(0, 101):
+        list_1_100.append(i)
+
+    for number in range(1, 101):
+        if int(number) % 15 == 0:
+            list_1_100[number] = ("FizzBuzz")
+        elif int(number) % 3 == 0:
+            list_1_100[number] = ("Fizz")
+        elif int(number) % 5 == 0:
+            list_1_100[number] = ("Buzz")
+
+    for number in list_1_100[1:]:
+        print(number)
 
 
 
 def main():
-    for x in range(1, 101):
-        fizzbuzz(x)
-    return
+
+    fizzbuzz()
+
 
 
 
